@@ -59,11 +59,12 @@
 
 // Annoying stuff for windows -- makes sure clients can import these functions
 #ifndef GOOGLE_GLOG_DLL_DECL
-# if defined(_WIN32) && !defined(__CYGWIN__)
-#   define GOOGLE_GLOG_DLL_DECL  __declspec(dllimport)
-# else
+//# if defined(_WIN32) && !defined(__CYGWIN__)
+//#   define GOOGLE_GLOG_DLL_DECL  __declspec(dllimport)
+//# else
+//UF - DS always static
 #   define GOOGLE_GLOG_DLL_DECL
-# endif
+//# endif
 #endif
 
 // We care a lot about number of bits things take up.  Unfortunately,
